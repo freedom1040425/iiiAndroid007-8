@@ -24,7 +24,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="udo"
+            android:text="undo"
             />
         <Button
             android:layout_width="match_parent"
@@ -34,7 +34,7 @@
 
 
     </LinearLayout>
-    <TextView
+    <tw.org.iii.iiiandroid008.MyView
         android:layout_width="0dp"
         android:layout_weight="5"
         android:layout_height="match_parent"
