@@ -112,7 +112,7 @@ public class MyView extends View {
         }
 
         public void  undo() {
-            if (lines.size() > 1) { //有線才丟掉
+            if (lines.size() > 0) { //有線才丟掉
                 recycle.add(lines.removeLast());//最後那一步 並且丟進資源回收桶
                 invalidate();//畫面清掉
 
@@ -120,7 +120,7 @@ public class MyView extends View {
         }
         //從資源回收桶撈出剛剛丟的那一步
         public void redo(){
-            if (recycle.size() > 1) { //有線才能拿
+            if (recycle.size() > 0) { //有線才能拿
                 lines.add(recycle.removeLast());//倒回那一步，是從回收桶拿的
                 invalidate();//畫面清掉
 
