@@ -84,7 +84,7 @@ public class MyView extends View {
                 canvas.drawLine(0,0,200,200,paint);  //座標系統
                 }*/
         for (LinkedList<Point> line : lines) {
-            for (int i = 1; i < line.size(); i++){ //每一點連起來
+            for (int i = 1; i < line.size(); i++){ //每一點連起來  線要從1個點開始
                 Point p0 = line.get(i - 1);
                 Point p1 = line.get(i);
                 canvas.drawLine(p0.x, p0.y, p1.x, p1.y, paint);
