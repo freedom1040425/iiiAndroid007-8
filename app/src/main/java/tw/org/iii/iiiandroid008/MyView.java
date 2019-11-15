@@ -43,6 +43,7 @@ public class MyView extends View {
         Point point = new Point(ex, ey);
                 //很多點跟超過第二條線 //如何決定 新線
         if (event.getAction() == MotionEvent.ACTION_DOWN){
+            recycle.clear();//新線開始 資源回收桶清空
             LinkedList<Point> line = new LinkedList<>();
             lines.add(line);
         }
